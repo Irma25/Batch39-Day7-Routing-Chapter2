@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapte II Day 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <!-- Left Side -->
+        <a class="navbar-brand me-5" href="#"><img src="../assets/img/logo.png" alt="Logo-Dumbways"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link nav-link-active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="add-project">Add Project</a>
+            </li>
+          </ul>
+          <!-- End Left Side -->
+
+          <!-- Right Side -->
+          <a href="form" class="btn btn-orange text-white">Contact Me</a>
+          <!-- End Right Side -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+      <!-- Section-1 -->
+      {{id}}
+      <div>
+        <h1 class="text-center container btn-orange ">{{title}}</h1>
+      </div>
+      <div class=" section container d-flex  "> 
+        <div class="left-side d-flex justify-content-center">
+          <div class="image-content">
+            <img src="../assets/img/me.png" alt="">
+          </div>
+          
+        </div>
+        <div class="right-side d-flex   flex-column ps-5 pt-5">
+            <h3>Duration</h3>
+          <div class="column-1 mt-3">
+            <div class="duration">
+                <div class=" d-flex flex-row">
+                    <i class="fa-solid fa-calendar-days me-3"></i>
+                    <p>{{postAt}}</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-clock me-3"></i>
+                    <p>{{duration}}</p>
+                </div>
+            </div>
+            
+          </div>
+          <div class="column-2 flex-row mt-3">
+            <h3>Technologies</h3>
+            <div class="img-1 d-flex flex-row mt-3">
+                <i class="fa-brands fa-node me-2" ></i>
+                <p class="me-3">Node Js</p>
+                <i class="fa-brands fa-java me-3"></i>
+                <p>Java</p>
+            </div>
+            <div class="img-2 d-flex flex-row">
+                <i class="fa-brands fa-js me-2"></i>
+                <p class="me-3">Javascript</p>
+                <i class="fa-brands fa-react me-2"></i>
+                <p>React</p>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <!-- end Section-1 -->
+
+      <!-- new content -->
+      
+      <div class="section container d-flex justify-content-center">
+        <div class="contents ">
+          <p>{{content}}</p>
+        </div>
+      </div>
+      <!-- end new content -->
+
+
+</body>
+</html>
